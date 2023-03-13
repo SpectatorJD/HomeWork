@@ -24,22 +24,14 @@ public class Main {
         String middleName = "Ivan ";
         String lastName = "Ivanovich";
         String fullName = firstName + middleName + lastName;
-        System.out.println("ФИО сотрудника " + toUpperCase(fullName));
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + toUpperCase(fullName));
 
     }
 
     public static void task3 () {
         System.out.println("Задача 3");
-        String firstName = "Иванов ";
-        firstName = firstName.replace("е", "ё");
-
-        String middleName = "Семен ";
-        middleName = middleName.replace( "Семен ", "Семён ");
-
-        String lastName = "Семенович";
-        lastName = lastName.replace( "Семенович", "Семёнович");
-
-        String fullName = firstName + middleName + lastName;
+        String fullName = "Иванов Семён Семёнович";
+        fullName.replace( "ё", "е");
 
         System.out.println(fullName);
 
